@@ -46,20 +46,22 @@ def part2(supplydict, inputList):
     
     return firstCrateList
 
-with open("input.txt", "r") as f:
-    inputList = f.readlines()
-    f.close()
 
-with open("supplydict.json", "r") as f:
-    supplydict = json.load(f)
+if  __name__ == "__main__":
+    with open("input.txt", "r") as f:
+        inputList = f.readlines()
+        f.close()
 
-
-
-#WARNING: Due to key similarities, comment/uncomment one at a time
+    with open("supplydict.json", "r") as f:
+        supplydict = json.load(f)
 
 
-#part1Return = "".join(part1(supplydict, inputList))
-#print("The answer to part 1 is: "+part1Return)
 
-part2Return = "".join(part2(supplydict, inputList))
-print("The answer to part 2 is: "+part2Return)
+    #WARNING: Due to key similarities, comment/uncomment one at a time
+
+
+    #part1Return = "".join(part1(supplydict, inputList))
+    #print("The answer to part 1 is: "+part1Return)
+
+    part2Return = "".join(part2(supplydict, inputList))
+    print("The answer to part 2 is: "+part2Return)
